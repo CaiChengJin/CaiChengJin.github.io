@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sales Knowledge Base — a personal tool for organizing private sales reference documents in Google Drive.">
+<title>Sales Knowledge Base</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172a39;background:#f3f6f7}*{box-sizing:border-box}body{margin:0}main{max-width:880px;margin:auto;padding:70px 24px}header{border-top:5px solid #18786b;padding-top:28px}small{color:#176c61;font-weight:700;letter-spacing:.12em;text-transform:uppercase}h1{font-size:clamp(2.3rem,6vw,3.7rem);letter-spacing:-.05em;line-height:1.1;margin:22px 0}p,li{font-size:1.05rem;line-height:1.8;color:#405561}h2{font-size:1.3rem;margin-top:0}.lead{max-width:700px;font-size:1.2rem}section{background:white;border:1px solid #dde6e7;border-radius:14px;padding:26px;margin-top:22px}a{color:#116c60;text-underline-offset:4px}nav{display:flex;gap:24px;flex-wrap:wrap;margin-top:30px;padding-top:24px;border-top:1px solid #d2dddf}footer{margin-top:30px;color:#667b86;font-size:.9rem}
+</style>
+</head>
+<body><main>
+<header><small>Personal document organization</small><h1>Sales Knowledge Base</h1><p class="lead">A personal application that turns sales reference documents into searchable, source-linked knowledge files stored in the owner's Google Drive.</p></header>
+<section><h2>What the application does</h2><p>The owner selects a dedicated Drive folder for PDF files, Word documents, screenshots and notes. A Python process running in GitHub Actions extracts text and creates Markdown documents and a JSON source index in a separate knowledge folder.</p><p>Scheduled checks can process new or updated documents. Duplicate content is reused, previous output versions are retained, and source links are preserved. The processor does not delete original documents.</p></section>
+<section><h2>Google Drive access</h2><p>The application requests Google Drive authorization so its unattended process can discover newly uploaded source documents and create derived files. The OAuth scope permits broad Drive access; the processor's folder configuration limits where its implemented operations run. This is a code-level restriction, not a folder-only OAuth permission.</p><p>The public website does not connect to Drive, collect credentials, or display the owner's documents. It provides application and privacy information only.</p></section>
+<section><h2>Human review and optional AI</h2><p>AI-generated sales lessons, when enabled by the owner, are drafts for human review. They are kept separate from approved reference materials and are not automatically treated as company policy or commitments.</p><p>External AI processing is currently disabled. Before enabling it, the owner must review the chosen provider's data practices and update the applicable privacy disclosures. No real customer data is published on this website.</p></section>
+<section><h2>Operator and intended use</h2><p>Operated by Justin Cai for personal sales-reference organization. This is not a public sign-up service. For questions, use the owner's support email shown on the application's Google consent screen.</p></section>
+<nav aria-label="Legal and application information"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+<footer>Last updated: 30 October 2026 · Sales Knowledge Base</footer>
+</main></body></html>
